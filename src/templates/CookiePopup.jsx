@@ -6,11 +6,11 @@ import CookieText from "../components/CookieText";
 import { useState } from "react";
 
 const CookiePopup = () => {
-  const [acceptCookies, setAcceptCookies] = useState(false);
+  const [iscookiesaccepted, setiscookiesaccepted] = useState(false);
   const [cookieisclosed, setcookieisclosed] = useState(false);
 
   return (
-  !acceptCookies && !cookieisclosed && <section className={` flex flex-col justify-between p-6 text-white bg-black w-72 h-80 rounded-3xl`}
+  !iscookiesaccepted && !cookieisclosed && <section className={` flex flex-col justify-between p-6 text-white bg-black w-72 h-80 rounded-3xl`}
     >
       <header className="flex justify-between">
         <LiaCookieBiteSolid size={50} />
@@ -19,7 +19,7 @@ const CookiePopup = () => {
       <footer className="flex flex-col">
         <CookieText />
         <CookieButton ctatext="2 like Cookies"
-          action={setAcceptCookies}
+          action={setiscookiesaccepted}
 
         />
       </footer>
