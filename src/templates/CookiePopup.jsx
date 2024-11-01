@@ -6,14 +6,15 @@ import CookieText from "../components/CookieText";
 import { useState } from "react";
 
 const CookiePopup = () => {
-  const [acceptCookies, setAcceptCookies] = useState(true);
+  const [acceptCookies, setAcceptCookies] = useState(false);
+  const [cookieisclosed, setcookieisclosed] = useState(false);
 
   return (
-  acceptCookies && <section className={` flex flex-col justify-between p-6 text-white bg-black w-72 h-80 rounded-3xl`}
+  !acceptCookies && !cookieisclosed && <section className={` flex flex-col justify-between p-6 text-white bg-black w-72 h-80 rounded-3xl`}
     >
       <header className="flex justify-between">
         <LiaCookieBiteSolid size={50} />
-        <IoIosClose onClick={() => setAcceptCookies (!acceptCookies)} className="cursor-pointer" size={25} />
+        <IoIosClose onClick={() => setcookieisclosed (!cookieisclosed)} className="cursor-pointer" size={25} />
       </header>
       <footer className="flex flex-col">
         <CookieText />

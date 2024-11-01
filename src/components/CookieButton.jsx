@@ -3,7 +3,7 @@
 const CookieButton = ({ctatext, action}) => {
   return (
     <button
-      onClick={() => action(false)}
+      onClick={() => action(true)}
       className={` p-3 text-lg text-black rounded-lg h-15 bg-slate-50`}
     >
       {ctatext}
