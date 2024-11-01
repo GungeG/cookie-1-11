@@ -1,6 +1,6 @@
 "use client";
 
-const CookieConsentText = () => {
+const CookieText = () => {
   return (
     <p className="leading-8 text-[25px] mb-4">
       We use cookies to improve your user expirence.
@@ -8,4 +8,4 @@ const CookieConsentText = () => {
   );
 };
 
-export default CookieConsentText;
+export default CookieText;

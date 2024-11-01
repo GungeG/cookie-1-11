@@ -1,9 +1,9 @@
 "use client";
 
-const CookieConsentButton = ({ctatext, action}) => {
+const CookieButton = ({ctatext, action}) => {
   return (
     <button
-      onClick={() => action(true)}
+      onClick={() => action(false)}
       className={` p-3 text-lg text-black rounded-lg h-15 bg-slate-50`}
     >
       {ctatext}
@@ -11,4 +11,4 @@ const CookieConsentButton = ({ctatext, action}) => {
   );
 };
 
-export default CookieConsentButton;
+export default CookieButton;

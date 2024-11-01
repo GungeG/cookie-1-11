@@ -1,9 +1,9 @@
-import CookieConsentPopup from "@/templates/CookieConsentPopup";
+import CookiePopup from "@/templates/CookiePopup";
 
 export default function Home() {
   return (
     <div>
-      <CookieConsentPopup />
+      <CookiePopup />
     </div>
   );
 }
