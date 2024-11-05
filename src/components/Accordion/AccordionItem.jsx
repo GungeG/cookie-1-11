@@ -17,7 +17,7 @@ const AccordionItem = ({ title, content }) => {
         <span>{isOpen ? '-' : '+'}</span>
       </button>
       {isOpen && (
-        <div className="p-4 bg-gray-100">
+        <div className="p-4 bg-gray-100 m-2 w-full">
           <p>{content}</p>
         </div>
       )}
